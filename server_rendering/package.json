@@ -1,0 +1,27 @@
+{
+  "name": "server_rendering",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./dist/server",
+    "start-client": "node ./dist/client",
+    "build-client": "webpack --config webpack.client.config.js",
+    "build-server": "webpack --config webpack.server.config.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.11.1",
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.2.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "path": "^0.12.7",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "styled-components": "^2.2.4"
+  }
+}
